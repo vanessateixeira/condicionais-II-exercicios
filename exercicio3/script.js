@@ -1,6 +1,6 @@
-//códigos a serem reescritos
+const nome = prompt('Digite seu nome')
+const idade = Number (prompt('digite sua idade'))
 
-// a)
 if(nome === "José"){
 	console.log("Oi, Zé!")
 } else {
@@ -14,3 +14,8 @@ if(idade >= 18){
 } else {
 	console.log("Ainda não pode tirar carteira de motorista!")
 }
+
+console.log('--- Com ternário abaixo ---')
+
+nome === 'José' ? console.log('Oi, Zé!') : console.log(`Oi, ${nome}!`)
+idade >= 18 ? console.log('Pode tirar CNH.') : console.log('Ainda não pode tirar a CNH.')

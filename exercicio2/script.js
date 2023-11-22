@@ -13,3 +13,33 @@ if(nacionalidade === "brasileira"){
 } else{
     console.log("nacionalidade não encontrada")
 }
+console.log('--- condição com switch case ---')
+
+function nacionalidade2(){
+    let pergunta = prompt('Digite sua nacionalidade')
+    let perguntaCorrigida = pergunta.toLowerCase()
+
+    switch (perguntaCorrigida){
+        case 'brasileira':
+            console.log('A pessoa é do Brasil.');
+            break;
+        case 'argentina':
+            console.log('A pessoa é da Argentina');
+            break;
+        case 'uruguaia':
+            console.log('A pessoa é do Uruguai.');
+            break;
+        case 'chilena':
+            console.log('A pessoa é do Chile');
+            break;
+        case 'colombiana':
+            console.log('A pessoa é da Colômbia');
+            break;
+        default:
+            console.log('Nacionalidade não encontrada.');
+    }
+
+    }
+    nacionalidade2()
+
+
